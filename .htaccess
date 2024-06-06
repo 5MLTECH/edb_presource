@@ -1,18 +1,37 @@
-Options All -Indexes
+# Enable URL rewriting
+RewriteEngine On
 
-DirectoryIndex index.php index.htm index.html
+# Prevent Clickjacking
+Header set X-Frame-Options "DENY"
 
-RewriteEngine on
-RewriteBase /
+# Prevent XSS attacks
+Header set X-XSS-Protection "1; mode=block"
 
-# Force HTTPS on the subdomains/subdirectories login or admin
-RewriteCond %{HTTPS} off
-RewriteCond %{HTTP_HOST} ^(login|admin)\. [NC]
-RewriteCond %{REQUEST_URI} ^(login|admin)\. [NC,OR]
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+# Enable Content Security Policy (CSP)
+Header set Content-Security-Policy "default-src 'self'; script-src 'self'; object-src 'none';"
 
-# Force WWW if no subdomain is given
-RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$
-RewriteCond %{HTTP_HOST} !^$
-RewriteCond %{HTTPS}s ^on(s)|
-RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+# Prevent MIME-type sniffing
+Header set X-Content-Type-Options "nosniff"
+
+# Referrer Policy
+Header set Referrer-Policy "no-referrer-when-downgrade"
+
+# Strict Transport Security (HSTS) for HTTPS only
+Header set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+
+Options -Indexes
+
+# Deny access to .htaccess and other hidden files
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+# Deny access to backup and source files
+<FilesMatch "\.(bak|config|sql|fla|psd|ini|log|sh|inc|swp|dist|md|exe|dll)$">
+    Require all denied
+</FilesMatch>
+
+
+RewriteRule "^activities/([a-zA-Z0-9_-]+)(/)*$" p1_activity1.php?section=$1 [L]
+RewriteRule "^how-to-make-hand-shadows-and-change-its-size(/)*$" /activities/p1_activity1.php [L]
+RewriteRule "^how-to-make-hand-shadows-and-change-its-size(/)*$" /activities/p1_activity1.php [L]
