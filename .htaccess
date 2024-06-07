@@ -33,5 +33,37 @@ Options -Indexes
 
 
 RewriteRule "^activities/([a-zA-Z0-9_-]+)(/)*$" p1_activity1.php?section=$1 [L]
-RewriteRule "^how-to-make-hand-shadows-and-change-its-size(/)*$" /activities/p1_activity1.php [L]
-RewriteRule "^how-to-make-hand-shadows-and-change-its-size(/)*$" /activities/p1_activity1.php [L]
+RewriteRule "^exploration-activity-1(/)*$" /activities/p1_activity1.php [L]
+
+RewriteRule "^activities/([a-zA-Z0-9_-]+)(/)*$" p2_activity1.php?section=$1 [L]
+RewriteRule "^exploration-activity-2(/)*$" /activities/p2_activity1.php [L]
+
+RewriteRule "^activities/([a-zA-Z0-9_-]+)(/)*$" p3_activity1.php?section=$1 [L]
+RewriteRule "^exploration-activity-3(/)*$" /activities/p3_activity1.php [L]
+
+RewriteRule "^activities/([a-zA-Z0-9_-]+)(/)*$" p3_activity2.php?section=$1 [L]
+RewriteRule "^exploration-activity-4(/)*$" /activities/p3_activity2.php [L]
+
+RewriteRule "^activities/([a-zA-Z0-9_-]+)(/)*$" p3_activity3.php?section=$1 [L]
+RewriteRule "^exploration-activity-5(/)*$" /activities/p3_activity3.php [L]
+
+RewriteRule "^activities/([a-zA-Z0-9_-]+)(/)*$" p3_activity4.php?section=$1 [L]
+RewriteRule "^exploration-activity-6(/)*$" /activities/p3_activity4.php [L]
+
+RewriteRule "^activities/([a-zA-Z0-9_-]+)(/)*$" p4_activity1.php?section=$1 [L]
+RewriteRule "^exploration-activity-7(/)*$" /activities/p4_activity1.php [L]
+
+RewriteRule "^activities/([a-zA-Z0-9_-]+)(/)*$" p4_activity2.php?section=$1 [L]
+RewriteRule "^exploration-activity-8(/)*$" /activities/p4_activity2.php [L]
+
+RewriteRule "^activities/([a-zA-Z0-9_-]+)(/)*$" p4_activity3.php?section=$1 [L]
+RewriteRule "^exploration-activity-9(/)*$" /activities/p4_activity3.php [L]
+
+RewriteRule "^activities/([a-zA-Z0-9_-]+)(/)*$" p4_activity4.php?section=$1 [L]
+RewriteRule "^exploration-activity-10(/)*$" /activities/p4_activity4.php [L]
+
+RewriteRule "^activities/([a-zA-Z0-9_-]+)(/)*$" p5_activity1.php?section=$1 [L]
+RewriteRule "^exploration-activity-11(/)*$" /activities/p5_activity1.php [L]
+
+RewriteRule "^activities/([a-zA-Z0-9_-]+)(/)*$" p5_activity2.php?section=$1 [L]
+RewriteRule "^exploration-activity-12(/)*$" /activities/p5_activity2.php [L]

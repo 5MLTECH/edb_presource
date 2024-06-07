@@ -9,7 +9,12 @@ html,body{
     --light_blue: #00A7F1;
     --mustard: #FFBE00;
     --pale_red: #FE6E65;
-    --default_transition: 200ms all ease;
+    --cold_steel: #F8F7F4;
+    --default_transition: 500ms all ease;
+}
+
+body {
+    background-color: var(--cold_steel);
 }
 
 p, body, h1, h2, h3 {
@@ -17,7 +22,7 @@ p, body, h1, h2, h3 {
 }
 
 .max-width {
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -25,16 +30,57 @@ p, body, h1, h2, h3 {
     color: var(--royal_blue);
     font-weight: 500;
     text-align: center;
-    padding: 1% 0;
+    padding: 2% 0;
     font-size: 18px;
 }
 
-.hero {
-    background-color: var(--light_blue);
-    width: 100%;
-    height: 300px;
-    position: relative;
+@media (max-width: 1024px) {
+    .header {
+        font-size: 14px;
+        padding: 5% 0;
+    }
 }
+
+.hero {
+    background: url("/images/desktop_banner.png");
+    position: relative;
+    padding-bottom: calc(100%*(691/1920));
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-title {
+   position: absolute;
+   margin-top: 4%;
+}
+
+.hero-mobile {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        background: url("/images/mobile_banner.png");
+        padding-bottom: calc(100%*(246/414));
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .hero-title {
+        margin-top: 8%;
+
+    }
+    .hero-mobile {
+        display: block;
+    }
+
+    .hero-pc {
+        display: none;
+    }
+}
+
 
 .page_title {
     position: absolute;
@@ -55,25 +101,35 @@ p, body, h1, h2, h3 {
 }
 
 .content {
-    padding: 3% 5%;
+    padding: 3% 0;
 }
 
 .cont-wrapper {
     display: flex;
-    padding: 2% 0;
+    padding: 2% 0 5% 0;
 }
 
 .cont-item {
-    width: 250px;
+    width: 242.5px;
+    /* width: 250px; */
     box-shadow: 0px 0px 29px -10px rgba(0, 0, 0, 0.2);
-    padding: 16px;
+    padding: 8px;
     text-align: center;
+    /* height: 350px; */
     height: 300px;
+    cursor: pointer;
+    transition: var(--default_transition);
+    text-decoration: none;
+}
+
+.cont-item:hover {
+    transition: var(--default_transition);
+    box-shadow: 0px 0px 39px 0px rgba(0, 0, 0, 0.2);
 }
 
 .cont-title {
     background-color: var(--royal_blue);
-    color: white;
+    color: var(--cold_steel);
     width: 280px;
     padding: 1%;
     text-align: center;
@@ -82,16 +138,18 @@ p, body, h1, h2, h3 {
     font-weight: 600;
 }
 
-.cont-img {
-    /* background: url(https://placehold.co/300x200); */
-    padding-bottom: calc(100%*(200 / 300));
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
+/* .cont-img {
+    padding-bottom: 5%;
+} */
 .cont-text {
     color: var(--royal_blue);
     font-size: 18px;
+    /* min-height: 155px; */
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .cont-item:not(.content4) {
@@ -108,29 +166,80 @@ p, body, h1, h2, h3 {
     .cont-item {
         margin: 0 !important;
         width: 45%;
-        height: 350px;
+        height: 450px;
     }
     .br-pc {
         display: none;
     }
 }
 
+
+@media (max-width:1200px) {
+    .content {
+        padding: 3% 5%;
+    }
+}
+
 .footer {
     background: var(--dark_blue);
-    color: white;
+    color: var(--cold_steel);
     padding: 2% 0;
     font-size: 14px;
     text-align: center;
 }
+
+@media (max-width: 1024px) {
+    .footer {
+        padding: 5% 0;
+        font-size: 12px;
+    }
+}
+.info-title {
+    background-color: var(--royal_blue);
+    color: var(--cold_steel);
+    width: 180px;
+    min-height: 45px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2.5;
+}
+.act-info {
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+    padding: 3% 0 5% 0;
+    gap: 40px;
+}
+
+.info-titles, .info-descs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .intro-cont {
     margin: 0 5%;
-
+    padding: 5% 0 2% 0;
+}
+.intro-desc p:not(.text-en) {
+    font-weight: 500;
+    padding-bottom: 1%;
+}
+.info-desc  p {
+    color: var(--royal_blue);
+    line-height: 2.5;
+}
+.desc-cn {
+    font-size: 18px;
+    font-weight: 500;
 }
 .intro-title {
     background: var(--royal_blue);
     width: max-content;
     padding: 1% 5%;
-    color: white;
+    color: var(--cold_steel);
     border-radius: 10px 10px 0 0;
     font-size: 18px;
     font-weight: 700;
@@ -148,7 +257,7 @@ p, body, h1, h2, h3 {
 .cta-wrap {
     background: var(--light_blue);
     padding: 2% 3%;
-    color: white;
+    color: var(--cold_steel);
     border-radius: 30px;
     margin-top: 3%;
 }
@@ -160,7 +269,7 @@ p, body, h1, h2, h3 {
     align-items: center;
 }
 .st-cta {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--cold_steel);
 }
 
 .st-cta .cta-btn {
@@ -182,16 +291,64 @@ p, body, h1, h2, h3 {
 
 .cta-btn:hover {
     transition: var(--default_transition);
-    background: white;
+    background: var(--cold_steel);
     color: var(--dark_blue);
 }
 
 @media (max-width: 767px) {
     .sec-cta {
-        flex-direction: column;
+        flex-direction: column !important;
         gap: 20px;
         justify-content: center;
         text-align: center;
     }
+    .st-cta {
+        padding-bottom: 3%;
+    }
+    .tc-cta {
+        padding-top: 3%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .intro-cont {
+        margin: 0 auto;
+        padding: 2% 0 2% 0;
+    }
+    .intro-title {
+        padding: 2% 5%;
+        border-radius: 20px 20px 0 0;
+        width: 30%;
+        font-size: 20px;
+    }
+    .cta-wrap {
+        margin-bottom: 5%;
+    }
+    .intro-desc {
+        font-size: 20px;
+    }
+    .act-info {
+        width: 100%;
+        padding: 5% 0 5% 0;
+    }
+    .info-titles, .info-descs {
+        width: 50%;
+    }
+    .info-title {
+        width: 90%;
+        border-radius: 40px;
+        font-size: 20px;
+    }
+    .it-pc {
+        display: none;
+    }
+    .info-desc {
+        font-size: 19px;
+        padding: 2% 0;
+    }
+}
+
+.text-en {
+    display: none;
 }
 
