@@ -1,18 +1,61 @@
-Options All -Indexes
-
-DirectoryIndex index.php index.htm index.html
-
-RewriteEngine on
+# Step 1: Minimal Setup
+RewriteEngine On
 RewriteBase /
 
-# Force HTTPS on the subdomains/subdirectories login or admin
-RewriteCond %{HTTPS} off
-RewriteCond %{HTTP_HOST} ^(login|admin)\. [NC]
-RewriteCond %{REQUEST_URI} ^(login|admin)\. [NC,OR]
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+# Step 2: Add Security Headers
+Header set X-Frame-Options "DENY"
+Header set X-XSS-Protection "1; mode=block"
+Header set Content-Security-Policy "default-src 'self'; script-src 'self'; object-src 'none';"
+Header set X-Content-Type-Options "nosniff"
+Header set Referrer-Policy "no-referrer-when-downgrade"
+Header set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
 
-# Force WWW if no subdomain is given
-RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$
-RewriteCond %{HTTP_HOST} !^$
-RewriteCond %{HTTPS}s ^on(s)|
-RewriteRule ^ http%1://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+# Step 3: Disable Directory Listing
+#Options -Indexes
+
+# Step 4: Deny Access to Hidden and Backup Files
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+<FilesMatch "\.(bak|config|sql|fla|psd|ini|log|sh|inc|swp|dist|md|exe|dll)$">
+    Require all denied
+</FilesMatch>
+
+# Step 5: Custom Error Pages
+ErrorDocument 403 /errors/403.html
+ErrorDocument 404 /errors/404.html
+ErrorDocument 500 /errors/500.html
+
+# Step 6: Add Sensitive Directory Restriction
+<FilesMatch "^(composer|vendor|node_modules|logs|tmp|tests)/">
+    Require all denied
+</FilesMatch>
+
+# Step 7: Add Rewrite Rules One by One
+RewriteRule "^exploration-activity-1(/)*$" /activities/p1_activity1.php [L]
+RewriteRule "^exploration-activity-2(/)*$" /activities/p2_activity1.php [L]
+RewriteRule "^exploration-activity-3(/)*$" /activities/p3_activity1.php [L]
+RewriteRule "^exploration-activity-4(/)*$" /activities/p3_activity2.php [L]
+RewriteRule "^exploration-activity-5(/)*$" /activities/p3_activity3.php [L]
+RewriteRule "^exploration-activity-6(/)*$" /activities/p3_activity4.php [L]
+RewriteRule "^exploration-activity-7(/)*$" /activities/p4_activity1.php [L]
+RewriteRule "^exploration-activity-8(/)*$" /activities/p4_activity2.php [L]
+RewriteRule "^exploration-activity-9(/)*$" /activities/p4_activity3.php [L]
+RewriteRule "^exploration-activity-10(/)*$" /activities/p4_activity4.php [L]
+RewriteRule "^exploration-activity-11(/)*$" /activities/p5_activity1.php [L]
+RewriteRule "^exploration-activity-12(/)*$" /activities/p5_activity2.php [L]
+
+RewriteRule "^exploration-activity/hand-and-shadowing(/)*$" /activities/p1_activity1.php [L]
+RewriteRule "^exploration-activity/the-growth-of-mung-bean(/)*$" /activities/p2_activity1.php [L]
+RewriteRule "^exploration-activity/salt-extraction(/)*$" /activities/p3_activity1.php [L]
+RewriteRule "^exploration-activity/water-around-us(/)*$" /activities/p3_activity2.php [L]
+RewriteRule "^exploration-activity/dissolving-sugar(/)*$" /activities/p3_activity3.php [L]
+RewriteRule "^exploration-activity/can-we-drink-seawater(/)*$" /activities/p3_activity4.php [L]
+RewriteRule "^exploration-activity/introduction-of-electricity(/)*$" /activities/p4_activity1.php [L]
+RewriteRule "^exploration-activity/will-shadow-change-with-time(/)*$" /activities/p4_activity2.php [L]
+RewriteRule "^exploration-activity/what-materials-can-conduct-electricity(/)*$" /activities/p4_activity3.php [L]
+RewriteRule "^exploration-activity/what-makes-the-waters-rise(/)*$" /activities/p4_activity4.php [L]
+RewriteRule "^exploration-activity/why-shall-we-add-yeast-when-baking(/)*$" /activities/p5_activity1.php [L]
+RewriteRule "^exploration-activity/what-leads-to-rusting(/)*$" /activities/p5_activity2.php [L]
+
+RewriteRule "^activities/([a-zA-Z0-9_-]+)(/)*$" p1_activity1.php?section=$1 [L]
