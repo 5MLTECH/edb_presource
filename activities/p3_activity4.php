@@ -8,8 +8,8 @@
 <body>
 
     <div class="hero">
-        <img class="hero-title hero-home hero-pc" src="/images/act6_title_desktop.png" width="65%" height="auto">
-        <img class="hero-title hero-home hero-mobile" src="/images/act6_title_mobile.png" width="80%" height="auto">
+        <img class="hero-title hero-act6 hero-pc" src="/images/act6_title_desktop.png" width="90%" height="auto">
+        <img class="hero-title hero-act6 hero-mobile" src="/images/act6_title_mobile.png" width="80%" height="auto">
     </div>
 
     <div class="content max-width">
@@ -73,7 +73,7 @@
         </div>
         <div class="intro-cont">
             <div class="intro-title">
-                리마 <span class="text-en">| Introduction </span>:
+                引言 <span class="text-en">| Introduction </span>：
             </div>
             <div class="intro-desc">
                 <p>你是一名小學三年級的學生，名叫__________，獨自一人在荒島上。你感到非常口渴，但附近只有鹽份太高的海水，不能飲用。幸好你記得在科學堂學習過把水和鹽分離的方法。在等待救援的過程中，你需要應用這些知識從周圍的海水中取得飲用水來維持生命。</p>

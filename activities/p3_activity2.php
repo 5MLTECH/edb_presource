@@ -8,8 +8,8 @@
 <body>
 
     <div class="hero">
-        <img class="hero-title hero-home hero-pc" src="/images/act4_title_desktop.png" width="65%" height="auto">
-        <img class="hero-title hero-home hero-mobile" src="/images/act4_title_mobile.png" width="80%" height="auto">
+        <img class="hero-title hero-act4 hero-pc" src="/images/act4_title_desktop.png" width="90%" height="auto">
+        <img class="hero-title hero-act4 hero-mobile" src="/images/act4_title_mobile.png" width="80%" height="auto">
     </div>
 
     <div class="content max-width">
@@ -73,7 +73,7 @@
         </div>
         <div class="intro-cont">
             <div class="intro-title">
-                리마 <span class="text-en">| Introduction </span>:
+                引言 <span class="text-en">| Introduction </span>：
             </div>
             <div class="intro-desc">
                 <p>為什麼地上的水經過一段時間後會「消失」，這些水去了哪裡？你有沒有想過雨從哪裡來？你可以用一個簡單模型來解說這些現象與水循環的關係嗎？</p>

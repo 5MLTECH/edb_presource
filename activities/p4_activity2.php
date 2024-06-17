@@ -8,8 +8,8 @@
 <body>
 
     <div class="hero">
-        <img class="hero-title hero-home hero-pc" src="/images/act8_title_desktop.png" width="65%" height="auto">
-        <img class="hero-title hero-home hero-mobile" src="/images/act8_title_mobile.png" width="80%" height="auto">
+        <img class="hero-title hero-act8 hero-pc" src="/images/act8_title_desktop.png" width="90%" height="auto">
+        <img class="hero-title hero-act8 hero-mobile" src="/images/act8_title_mobile.png" width="80%" height="auto">
     </div>
 
     <div class="content max-width">
@@ -73,7 +73,7 @@
         </div>
         <div class="intro-cont">
             <div class="intro-title">
-                리마 <span class="text-en">| Introduction </span>:
+                引言 <span class="text-en">| Introduction </span>：
             </div>
             <div class="intro-desc">
                 <p>中國人有一句成語叫做「立竿見影」，通常用於指一些能立即見效的事情。就如豎立一根竿在地上，在太陽的照射下，我們能即時見到竿的影子。這個立竿見影的現象，相信我們都見過了，但我們有沒有留意，竿子在太陽底下所產生的影子是甚麼模樣的？這個影子會隨時間改變嗎？以下我們便探究一下，在不同時間的太陽光照射底下，影子會有甚麼變化。</p>

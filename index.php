@@ -8,7 +8,7 @@
     <body>
 
         <div class="hero">
-            <img class="hero-title hero-home hero-pc" src="/images/home_title_desktop.png" width="65%" height="auto">
+            <img class="hero-title hero-home hero-pc" src="/images/home_title_desktop.png" width="55%" height="auto">
             <img class="hero-title hero-home hero-mobile" src="/images/home_title_mobile.png" width="80%" height="auto">
         </div>
 
@@ -20,7 +20,7 @@
                 </div>
 
                 <div class="cont-wrapper">
-                    <a class="cont-item content1" href="exploration-activity-1">
+                    <a class="cont-item content1" href="/exploration-activity/hand-and-shadowing/">
                         <img class="cont-img" src="/images/act_1.png" width="100%" height="auto">
                         <div class="cont-text">
                             怎樣做出手影和改變<br class="br-pc">它的大小？
@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="cont-wrapper">
-                    <a class="cont-item content1" href="exploration-activity-2">
+                    <a class="cont-item content1" href="/exploration-activity/the-growth-of-mung-bean/">
                         <img class="cont-img" src="/images/act_2.png" width="100%" height="auto">
                         <div class="cont-text">
                             綠豆的生長是怎樣的
@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="cont-wrapper">
-                    <a class="cont-item content1" href="exploration-activity-3">
+                    <a class="cont-item content1" href="/exploration-activity/salt-extraction/">
                         <img class="cont-img" src="/images/act_3.png" width="100%" height="auto">
                         <div class="cont-text">
                             可以從鹽水中把鹽<br class="br-pc">提取出來嗎？
@@ -63,7 +63,7 @@
                             </span>
                         </div>
                     </a>
-                    <a class="cont-item content2" href="exploration-activity-4">
+                    <a class="cont-item content2" href="/exploration-activity/water-around-us/">
                         <img class="cont-img" src="/images/act_4.png" width="100%" height="auto">
                         <div class="cont-text">
                             水如何周遊世界？
@@ -72,7 +72,7 @@
                             </span>
                         </div>
                     </a>
-                    <a class="cont-item content3" href="exploration-activity-5">
+                    <a class="cont-item content3" href="/exploration-activity/dissolving-sugar/">
                         <img class="cont-img" src="/images/act_5.png" width="100%" height="auto">
                         <div class="cont-text">
                             怎樣使糖在檸檬茶中<br class="br-pc">溶解得快些？
@@ -81,7 +81,7 @@
                             </span>
                         </div>
                     </a>
-                    <a class="cont-item content4" href="exploration-activity-6">
+                    <a class="cont-item content4" href="/exploration-activity/can-we-drink-seawater/">
                         <img class="cont-img" src="/images/act_6.png" width="100%" height="auto">
                         <div class="cont-text">
                             太陽能把海水變成飲用水嗎？
@@ -97,7 +97,7 @@
                     小四 <span class="text-en">| Primary 4</span>
                 </div>
                 <div class="cont-wrapper">
-                    <a class="cont-item content1" href="exploration-activity-7">
+                    <a class="cont-item content1" href="/exploration-activity/introduction-of-electricity/">
                         <img class="cont-img" src="/images/act_7.png" width="100%" height="auto">
                         <div class="cont-text">
                             為甚麼手電筒不亮着？
@@ -106,7 +106,7 @@
                             </span>
                         </div>
                     </a>
-                    <a class="cont-item content2" href="exploration-activity-8">
+                    <a class="cont-item content2" href="/exploration-activity/will-shadow-change-with-time/">
                         <img class="cont-img" src="/images/act_8.png" width="100%" height="auto">
                         <div class="cont-text">
                             在太陽光下的影子會隨時<br class="br-pc">間變化嗎？
@@ -115,7 +115,7 @@
                             </span>
                         </div>
                     </a>
-                    <a class="cont-item content3" href="exploration-activity-9">
+                    <a class="cont-item content3" href="/exploration-activity/what-materials-can-conduct-electricity/">
                         <img class="cont-img" src="/images/act_9.png" width="100%" height="auto">
                         <div class="cont-text">
                             甚麼物料可以導電？
@@ -124,7 +124,7 @@
                             </span>
                         </div>
                     </a>
-                    <a class="cont-item content4" href="exploration-activity-10">
+                    <a class="cont-item content4" href="/exploration-activity/what-makes-the-waters-rise/">
                         <img class="cont-img" src="/images/act_10.png" width="100%" height="auto">
                         <div class="cont-text">
                             是甚麼導致海平面上升，陸冰<br class="br-pc">融化、海冰融化或兩者皆是？
@@ -141,7 +141,7 @@
                     小五 <span class="text-en">| Primary 5</span>
                 </div>
                 <div class="cont-wrapper">
-                    <a class="cont-item content1" href="exploration-activity-11">
+                    <a class="cont-item content1" href="/exploration-activity/why-shall-we-add-yeast-when-baking/">
                         <img class="cont-img" src="/images/act_11.png" width="100%" height="auto">
                         <div class="cont-text">
                             為甚麼製作麪包時要<br class="br-pc">添加酵母？
@@ -151,7 +151,7 @@
                             </span>
                         </div>
                     </a>
-                    <a class="cont-item content2" href="exploration-activity-12">
+                    <a class="cont-item content2" href="/exploration-activity/what-leads-to-rusting/">
                         <img class="cont-img" src="/images/act_12.png" width="100%" height="auto">
                         <div class="cont-text">
                             甚麼導致鐵生鏽？

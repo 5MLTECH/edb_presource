@@ -8,8 +8,8 @@
 <body>
 
     <div class="hero">
-        <img class="hero-title hero-home hero-pc" src="/images/act9_title_desktop.png" width="65%" height="auto">
-        <img class="hero-title hero-home hero-mobile" src="/images/act9_title_mobile.png" width="80%" height="auto">
+        <img class="hero-title hero-act9 hero-pc" src="/images/act9_title_desktop.png" width="90%" height="auto">
+        <img class="hero-title hero-act9 hero-mobile" src="/images/act9_title_mobile.png" width="80%" height="auto">
     </div>
 
     <div class="content max-width">
@@ -73,7 +73,7 @@
         </div>
         <div class="intro-cont">
             <div class="intro-title">
-                리마 <span class="text-en">| Introduction </span>:
+                引言 <span class="text-en">| Introduction </span>：
             </div>
             <div class="intro-desc">
                 <p>在我們家居中，所有的電器都會有電線接駁到電源來取電。你有仔細檢視過那些電線嗎？為甚麼電線的內部通常是用銅造，而外面又要包着膠呢？這正與這些物料的導電性能有關。在這個探究活動中，我們會看看哪些物料能導電，哪些不能。</p>

@@ -27,11 +27,17 @@ p, body, h1, h2, h3 {
 }
 
 .header {
-    color: var(--royal_blue);
+    color: var(--royal_blue) !important;
     font-weight: 500;
     text-align: center;
     padding: 2% 0;
     font-size: 18px;
+}
+
+.header a {
+
+    color: var(--royal_blue) !important;
+    text-decoration: none;
 }
 
 @media (max-width: 1024px) {
@@ -49,11 +55,16 @@ p, body, h1, h2, h3 {
     background-size: contain;
     display: flex;
     justify-content: center;
+	overflow: hidden;
 }
 
 .hero-title {
    position: absolute;
    margin-top: 4%;
+}
+
+.hero-title.hero-home {
+    margin-top: -3%;
 }
 
 .hero-mobile {
@@ -69,7 +80,7 @@ p, body, h1, h2, h3 {
     }
 
     .hero-title {
-        margin-top: 8%;
+        margin-top: 5%;
 
     }
     .hero-mobile {
@@ -78,6 +89,9 @@ p, body, h1, h2, h3 {
 
     .hero-pc {
         display: none;
+    }
+    .hero-title.hero-home {
+        margin-top: 3%;
     }
 }
 
@@ -207,8 +221,8 @@ p, body, h1, h2, h3 {
 }
 .act-info {
     display: flex;
-    margin: 0 auto;
-    width: 60%;
+    margin: 0 5%;
+    /* width: 60%; */
     padding: 3% 0 5% 0;
     gap: 40px;
 }
@@ -255,7 +269,7 @@ p, body, h1, h2, h3 {
 }
 
 .cta-wrap {
-    background: var(--light_blue);
+    background: var(--royal_blue);
     padding: 2% 3%;
     color: var(--cold_steel);
     border-radius: 30px;
@@ -289,6 +303,10 @@ p, body, h1, h2, h3 {
     border: 2px solid var(--pale_red);
 }
 
+.tc-cta .cta-btn {
+    color: var(--dark_blue);
+}
+
 .cta-btn:hover {
     transition: var(--default_transition);
     background: var(--cold_steel);
@@ -307,6 +325,9 @@ p, body, h1, h2, h3 {
     }
     .tc-cta {
         padding-top: 3%;
+    }
+    .cta-btn {
+        padding: 1% 15%;
     }
 }
 
@@ -330,6 +351,7 @@ p, body, h1, h2, h3 {
     .act-info {
         width: 100%;
         padding: 5% 0 5% 0;
+        margin: 0 auto;
     }
     .info-titles, .info-descs {
         width: 50%;
@@ -344,8 +366,13 @@ p, body, h1, h2, h3 {
     }
     .info-desc {
         font-size: 19px;
-        padding: 2% 0;
+        padding: 1.5% 0;
+        height: 40px;
     }
+    .info-desc p {
+        line-height: 1.5;
+    }
+
 }
 
 .text-en {

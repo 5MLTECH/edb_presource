@@ -8,8 +8,8 @@
 <body>
 
     <div class="hero">
-        <img class="hero-title hero-home hero-pc" src="/images/act3_title_desktop.png" width="65%" height="auto">
-        <img class="hero-title hero-home hero-mobile" src="/images/act3_title_mobile.png" width="80%" height="auto">
+        <img class="hero-title hero-act3 hero-pc" src="/images/act3_title_desktop.png" width="90%" height="auto">
+        <img class="hero-title hero-act3 hero-mobile" src="/images/act3_title_mobile.png" width="80%" height="auto">
     </div>
 
     <div class="content max-width">
@@ -73,7 +73,7 @@
         </div>
         <div class="intro-cont">
             <div class="intro-title">
-                리마 <span class="text-en">| Introduction </span>:
+                引言 <span class="text-en">| Introduction </span>：
             </div>
             <div class="intro-desc">
                 <p>食鹽放在水中漸漸便會溶解形成鹽水。如果我們把鹽水中的水蒸發了，能否重新提取鹽呢？以下讓我們來探究一下能否用這個方法把鹽從鹽水中提取出來。</p>

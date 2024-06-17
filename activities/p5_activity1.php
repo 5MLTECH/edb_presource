@@ -8,8 +8,8 @@
 <body>
 
     <div class="hero">
-        <img class="hero-title hero-home hero-pc" src="/images/act11_title_desktop.png" width="65%" height="auto">
-        <img class="hero-title hero-home hero-mobile" src="/images/act11_title_mobile.png" width="80%" height="auto">
+        <img class="hero-title hero-act11 hero-pc" src="/images/act11_title_desktop.png" width="90%" height="auto">
+        <img class="hero-title hero-act11 hero-mobile" src="/images/act11_title_mobile.png" width="80%" height="auto">
     </div>
 
     <div class="content max-width">
@@ -73,7 +73,7 @@
         </div>
         <div class="intro-cont">
             <div class="intro-title">
-                리마 <span class="text-en">| Introduction </span>:
+                引言 <span class="text-en">| Introduction </span>：
             </div>
             <div class="intro-desc">
                 <p>製作麪包的五種常見成分是麪粉、酵母、水、鹽和糖。 酵母是真菌，是微生物的一種。 製作麪包時為什麼要添加酵母？</p>

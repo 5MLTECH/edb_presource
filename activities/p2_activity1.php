@@ -8,8 +8,8 @@
 <body>
 
     <div class="hero">
-        <img class="hero-title hero-home hero-pc" src="/images/act2_title_desktop.png" width="65%" height="auto">
-        <img class="hero-title hero-home hero-mobile" src="/images/act2_title_mobile.png" width="80%" height="auto">
+        <img class="hero-title hero-act2 hero-pc" src="/images/act2_title_desktop.png" width="90%" height="auto">
+        <img class="hero-title hero-act2 hero-mobile" src="/images/act2_title_mobile.png" width="80%" height="auto">
     </div>
 
     <div class="content max-width">
@@ -73,7 +73,7 @@
         </div>
         <div class="intro-cont">
             <div class="intro-title">
-                리마 <span class="text-en">| Introduction </span>:
+                引言 <span class="text-en">| Introduction </span>：
             </div>
             <div class="intro-desc">
                 <p>你知道植物需要甚麼才能生長嗎？ 一粒種子是怎樣變成一棵植物的？我們一起來種植綠豆，觀察其生長吧。</p>

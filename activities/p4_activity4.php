@@ -8,8 +8,8 @@
 <body>
 
     <div class="hero">
-        <img class="hero-title hero-home hero-pc" src="/images/act10_title_desktop.png" width="65%" height="auto">
-        <img class="hero-title hero-home hero-mobile" src="/images/act10_title_mobile.png" width="80%" height="auto">
+        <img class="hero-title hero-act10 hero-pc" src="/images/act10_title_desktop.png" width="90%" height="auto">
+        <img class="hero-title hero-act10 hero-mobile" src="/images/act10_title_mobile.png" width="80%" height="auto">
     </div>
 
     <div class="content max-width">
@@ -73,7 +73,7 @@
         </div>
         <div class="intro-cont">
             <div class="intro-title">
-                리마 <span class="text-en">| Introduction </span>:
+                引言 <span class="text-en">| Introduction </span>：
             </div>
             <div class="intro-desc">
                 <p>從你的日常經驗來看，當冷飲中的冰塊全部融化後，冷飲會溢出來嗎？ 如果在冷飲中加入更多冰塊，冷飲會溢出來嗎？以上的情況與極地冰融化的情況類似。試比對冷飲與極地的不同部分，用直線把它們連起來作配對。</p>

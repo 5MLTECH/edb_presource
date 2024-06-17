@@ -8,8 +8,8 @@
 <body>
 
     <div class="hero">
-        <img class="hero-title hero-home hero-pc" src="/images/act5_title_desktop.png" width="65%" height="auto">
-        <img class="hero-title hero-home hero-mobile" src="/images/act5_title_mobile.png" width="80%" height="auto">
+        <img class="hero-title hero-act5 hero-pc" src="/images/act5_title_desktop.png" width="90%" height="auto">
+        <img class="hero-title hero-act5 hero-mobile" src="/images/act5_title_mobile.png" width="80%" height="auto">
     </div>
 
     <div class="content max-width">
@@ -73,7 +73,7 @@
         </div>
         <div class="intro-cont">
             <div class="intro-title">
-                리마 <span class="text-en">| Introduction </span>:
+                引言 <span class="text-en">| Introduction </span>：
             </div>
             <div class="intro-desc">
                 <p>喝檸檬茶時，我們會喜歡加點糖，可是糖通常不是立即溶解的，有時會快些，有時卻要等很久。究竟是甚麼因素影響糖的溶解快慢？我們試試從以下的探究活動找出答案。</p>
