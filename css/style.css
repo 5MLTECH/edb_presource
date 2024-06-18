@@ -180,10 +180,38 @@ p, body, h1, h2, h3 {
     .cont-item {
         margin: 0 !important;
         width: 45%;
-        height: 450px;
     }
     .br-pc {
         display: none;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .cont-item {
+
+        height: 200px;
+    }
+
+    .cont-text {
+        font-size: 14px;
+        min-height: 80px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .cont-item {
+
+        height: 450px;
+    }
+}
+
+@media (max-width: 424px) {
+
+
+    .cont-item {
+        width: 43%;
     }
 }
 
