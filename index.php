@@ -40,7 +40,7 @@
                     <a class="cont-item content1" href="/exploration-activity/the-growth-of-mung-bean/">
                         <img class="cont-img" src="/images/act_2.png" width="100%" height="auto">
                         <div class="cont-text">
-                            綠豆的生長是怎樣的
+                            綠豆的生長是怎樣的？
                             <span class="text-en">
                                 How Do Green Mung Beans Grow?
                             </span>

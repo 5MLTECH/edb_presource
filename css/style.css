@@ -50,7 +50,7 @@ p, body, h1, h2, h3 {
 .hero {
     background: url("/images/desktop_banner.png");
     position: relative;
-    padding-bottom: calc(100%*(691/1920));
+    padding-bottom: calc(100%*(1349/3355));
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
@@ -74,7 +74,7 @@ p, body, h1, h2, h3 {
 @media (max-width: 1024px) {
     .hero {
         background: url("/images/mobile_banner.png");
-        padding-bottom: calc(100%*(246/414));
+        padding-bottom: calc(100%*(512/861));
         background-repeat: no-repeat;
         background-size: contain;
     }
@@ -234,7 +234,7 @@ p, body, h1, h2, h3 {
 }
 
 .intro-cont {
-    margin: 0 5%;
+    margin: 0 4%;
     padding: 5% 0 2% 0;
 }
 .intro-desc p:not(.text-en) {
@@ -350,7 +350,7 @@ p, body, h1, h2, h3 {
     }
     .act-info {
         width: 100%;
-        padding: 5% 0 5% 0;
+        padding: 5% 0 4% 0;
         margin: 0 auto;
     }
     .info-titles, .info-descs {
