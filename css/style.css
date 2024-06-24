@@ -130,7 +130,8 @@ p, body, h1, h2, h3 {
     padding: 8px;
     text-align: center;
     /* height: 350px; */
-    height: 300px;
+    /* height: 300px; */
+    height: max-content;
     cursor: pointer;
     transition: var(--default_transition);
     text-decoration: none;
@@ -180,10 +181,59 @@ p, body, h1, h2, h3 {
     .cont-item {
         margin: 0 !important;
         width: 45%;
-        height: 450px;
     }
     .br-pc {
         display: none;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* .cont-item {
+
+        height: 200px;
+    } */
+
+    .cont-text {
+        font-size: 14px;
+        min-height: 80px;
+    }
+}
+
+@media (min-width: 823px) and (max-width: 908px) {
+
+    /* .cont-item {
+
+        height: 350px;
+    } */
+
+
+    .cont-text {
+        font-size: 18px;
+        min-height: 80px;
+    }
+}
+
+@media (min-width: 909px) and (max-width: 1024px) {
+
+    /* .cont-item {
+
+        height: 380px;
+    } */
+
+
+    .cont-text {
+        font-size: 18px;
+        min-height: 80px;
+    }
+}
+
+
+@media (max-width: 424px) {
+
+
+    .cont-item {
+        width: 43%;
     }
 }
 
