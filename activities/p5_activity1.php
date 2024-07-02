@@ -76,7 +76,7 @@
                 引言 <span class="text-en">| Introduction </span>：
             </div>
             <div class="intro-desc">
-                <p>製作麪包的五種常見成分是麪粉、酵母、水、鹽和糖。 酵母是真菌，是微生物的一種。 製作麪包時為什麼要添加酵母？</p>
+                <p>製作麪包的五種常見成分是麪粉、酵母、水、鹽和糖。 酵母是真菌，是微生物的一種。 製作麪包時為甚麼要添加酵母？</p>
                 <p class="text-en"><p>
             </div>
         </div>
